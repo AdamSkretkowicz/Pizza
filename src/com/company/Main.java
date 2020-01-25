@@ -13,7 +13,7 @@ public class Main {
 
         if (iloscPizz == 0 || iloscPizz < 0) {
             System.out.println("Wpisales niepoprawną ilosc, koncze program");
-        } else if (iloscPizz > 0) {
+        } else {
             System.out.println("Wpisales " + iloscPizz + " do porownania, podaj ich parametry: [rozmiar(cm),cena]");
 
             Double[] tablicaObliczeniowa = new Double[iloscPizz];
@@ -26,7 +26,7 @@ public class Main {
                 double cenaPizzy = wpiszCene.nextInt();
                 System.out.println("Pizza nr " + i + " rozmiar: " + rozmiarPizzy + " cena: " + cenaPizzy);
 
-                double wspolczynnik = rozmiarPizzy / cenaPizzy;
+                double wspolczynnik = (3.14*Math.pow((rozmiarPizzy/2),2)) / cenaPizzy;
                 System.out.println("wspolczynnik :" + wspolczynnik);
                 tablicaObliczeniowa[i - 1] = wspolczynnik;
             }
