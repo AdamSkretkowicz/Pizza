@@ -11,7 +11,7 @@ public class Main {
         Scanner wpiszIloscPizzy = new Scanner(System.in);
         int iloscPizz = wpiszIloscPizzy.nextInt();
 
-        if (iloscPizz == 0 || iloscPizz < 0) {
+        if (iloscPizz <= 0) {
             System.out.println("Wpisales niepoprawną ilosc, koncze program");
         } else {
             System.out.println("Wpisales " + iloscPizz + " do porownania, podaj ich parametry: [rozmiar(cm),cena]");
