@@ -39,6 +39,7 @@ public class Main {
                 }
             }
             System.out.println("Wspolczynnik oplacalnosci : " + max + " posiada pizza nr : " + max_index);
+
         }
     }
 }
